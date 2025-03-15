@@ -25,13 +25,15 @@ public class Atv2_MaquinaTroco {
                 System.out.println("Troco calculado = R$ " + troco + ",00");
             }
 
-            int [] notas = {50, 20, 10, 5, 2, 1};
+            //Loop de repetição que calcula a quantidade de notas de cada valor. 
 
-            for (int nota : notas) {
+            int [] notas = {50, 20, 10, 5, 2, 1}; //Priorizando sempre o menor número de notas (Ordem Descrescente)
+
+            for (int nota : notas) { // Inicio do loop
                 int quantidadeNotas = troco / nota;
-                if (quantidadeNotas > 0) {
+                if (quantidadeNotas > 0) { //Condição de encerramento
                     System.out.println("Notas de R$ " + nota + ",00: " + quantidadeNotas);
-                    troco &= nota;
+                    troco &= nota; //Calcula o que falta do troco para ser divido
                 }
             }
         }
