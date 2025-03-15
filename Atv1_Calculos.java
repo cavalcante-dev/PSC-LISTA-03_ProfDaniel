@@ -34,7 +34,7 @@ public class Atv1_Calculos {
 
         double menor; //Processo para descobrir o número menor. 
 
-        if (num1 > num2) { 
+        if (num1 > num2) { //Daria pra usar Math.min mas decidi deixar essa solução para exercitar a lógica.
          menor = num1;
         } else if (num2 > num1){
          menor = num2;
